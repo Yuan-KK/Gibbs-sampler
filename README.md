@@ -31,6 +31,7 @@ of values is assigned and select motifs from these points. So our first set of _
 | 99 | T | T | G | C | A | G | C |
 
 - The site-specific nucleotide frequencies matrix shows that the number of occurrences of each of the four nucleotides at each location.
+
 |  | sum | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | A | 276 | 12 | 4 | 7 | 9 | 6 | 11 |
