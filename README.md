@@ -52,8 +52,8 @@ and where it is located in the sequence.
 
 ![](https://cdn.nlark.com/yuque/__latex/a84028e2ce1d9fdbd3d7fe71c4816c43.svg#card=math&code=F%3D%5Csum_%7Bi%3D1%7D%5EM%5Csum_%7Bj%3D1%7D%5ELC_%7Bij%7D%5Ctext%7BPPM%7D_%7Bij%7D%5C%5C&id=IDegs)
 
-       - Each time when we get a new set of motifs, we compute a new **𝐹** value. **𝐹** is a measure of the quailty of alignment of the motifs. The larger the **𝐹** value, the better.
-       - **_L_** is the motif width, and **_M_** is the number of different symbols in the sequences (4 for nucleotide and 20 for amino acid sequences).
+       Each time when we get a new set of motifs, we compute a new **𝐹** value. **𝐹** is a measure of the quailty of alignment of the motifs. The larger the **𝐹** value, the better.
+       **_L_** is the motif width, and **_M_** is the number of different symbols in the sequences (4 for nucleotide and 20 for amino acid sequences).
 - The predictive updating is repeated multiple times and previously stored locally optimal solutions are replaced by better ones. After going through all the sequences **1000** times, we finally find one of the locally optimal solutions.
 
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2965461/1633528970680-cd182239-30dc-49f1-ac23-438c9096805a.png#clientId=u9bd19277-e55c-4&from=paste&height=426&id=uf7e71dc8&margin=%5Bobject%20Object%5D&name=image.png&originHeight=851&originWidth=2320&originalType=binary&ratio=1&size=111693&status=done&style=none&taskId=uec8b28da-a57a-41e1-8664-5a1b85654c3&width=1160)
