@@ -8,6 +8,7 @@ and where it is located in the sequence.
 - The first is random initialization in which a random set 
 of values is assigned and select motifs from these points. So our first set of _**𝑁 **_(total number of the input sequences) "motifs" is essentially a random set of
  sequences of length _**L **_and is not expected to have any pattern. 
+
 |  | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | C | A | A | C | G | G | T |
@@ -225,4 +226,3 @@ optional arguments:
   -L [LENGTH], --length [LENGTH]
                         The length of motif expected to get
 ```
-```shell
