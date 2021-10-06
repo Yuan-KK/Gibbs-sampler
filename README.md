@@ -5,9 +5,7 @@ and where it is located in the sequence.
 ### The main algorithm of Gibbs sampler is consist of following steps. 
 #### 1. Initialization
 
-- The first is random initialization in which a random set 
-of values is assigned and select motifs from these points. So our first set of _**𝑁 **_(total number of the input sequences) "motifs" is essentially a random set of
- sequences of length _**L **_and is not expected to have any pattern. 
+- The first is random initialization in which a random set of values is assigned and select motifs from these points. So our first set of **_N_** (total number of the input sequences) "motifs" is essentially a random set of sequences of length **_L_** and is not expected to have any pattern. 
 
 |  | 0 | 1 | 2 | 3 | 4 | 5 | 6 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -41,12 +39,8 @@ of values is assigned and select motifs from these points. So our first set of _
 
 #### 2. Predictive Update.
 
-- Firstly, we need 𝑁 random numbers ranging from 1 to 𝑁, and use these numbers as an index to choose the sequences sequentially to update the site-specific distribution of nucleotides and the associated frequencies. (Using a random series of numbers instead of
- choosing sequences according to the input order can decrease the likelihood of trapping Gibbs sampler within a
-  local optimum.)
-- Then we scan the sequence in a
- sliding window of length _L_ to get position weight probability
-  score (PPMS) for each window. 
+- Firstly, we need **_N_** random numbers ranging from 1 to **_N_** and use these numbers as an index to choose the sequences sequentially to update the site-specific distribution of nucleotides and the associated frequencies. (Using a random series of numbers instead of choosing sequences according to the input order can decrease the likelihood of trapping Gibbs sampler within a local optimum.)
+- Then we scan the sequence in a sliding window of length **_L_** to get position weight probability score (PPMS) for each window. 
 
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2965461/1633510602157-a2d864c5-32ac-4c0e-8caa-0dd8f6a2885b.png#clientId=u9bd19277-e55c-4&from=paste&height=196&id=u3fca4f2b&margin=%5Bobject%20Object%5D&name=image.png&originHeight=392&originWidth=1174&originalType=binary&ratio=1&size=57452&status=done&style=none&taskId=ud64bae09-e319-4342-b58c-cc4e4c2ad74&width=587)​
 
@@ -64,10 +58,10 @@ of values is assigned and select motifs from these points. So our first set of _
 ![](https://cdn.nlark.com/yuque/__latex/a84028e2ce1d9fdbd3d7fe71c4816c43.svg#card=math&code=F%3D%5Csum_%7Bi%3D1%7D%5EM%5Csum_%7Bj%3D1%7D%5ELC_%7Bij%7D%5Ctext%7BPPM%7D_%7Bij%7D%5C%5C&id=IDegs)
 
    - Each time when we get a new set of motifs, we compute a new **𝐹** value. **𝐹** is a measure of the quailty of alignment of the motifs. The larger the **𝐹** value, the better.
-   - **_L_** is the motif width, and**_ M _**is the number of
+   - **_L_** is the motif width, and **_M_** is the number of
  different symbols in the sequences (4 for nucleotide and 20
   for amino acid sequences).
-- The predictive updating is repeated multiple times and previously stored locally optimal solutions are replaced by better ones. After going through all the sequences** 1000 **times, we finally find one of the locally optimal solutions.
+- The predictive updating is repeated multiple times and previously stored locally optimal solutions are replaced by better ones. After going through all the sequences **1000** times, we finally find one of the locally optimal solutions.
 
 ![image.png](https://cdn.nlark.com/yuque/0/2021/png/2965461/1633528970680-cd182239-30dc-49f1-ac23-438c9096805a.png#clientId=u9bd19277-e55c-4&from=paste&height=426&id=uf7e71dc8&margin=%5Bobject%20Object%5D&name=image.png&originHeight=851&originWidth=2320&originalType=binary&ratio=1&size=111693&status=done&style=none&taskId=uec8b28da-a57a-41e1-8664-5a1b85654c3&width=1160)
 #### 3. Convergence
