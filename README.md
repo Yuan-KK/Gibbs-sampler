@@ -1,8 +1,8 @@
 # Gibbs-sampler
-A motif is defined as a sequence of nucleotides or proteins that has some specific biological function or structure. For example, the transcription factor binding sites (TFBS), as a kind of DNA motif, play an important role in regulating gene expression. Up to now, A large number of algorithms for finding DNA motifs have been developed. Gibbs sampler is one of the Monte Carlo algorithms for de novo motif discovery. De novo 
+A motif is defined as a sequence of nucleotides or proteins that have some specific biological function or structure. For example, the transcription factor binding sites (TFBS), as a kind of DNA motif, play an important role in regulating gene expression. Up to now, A large number of algorithms for finding DNA motifs have been developed. Gibbs sampler is one of the Monte Carlo algorithms for de novo motif discovery. De novo 
 motif discovery refers to the process of finding a motif in a sequence but we do not know what the motif is like 
 and where it is located in the sequence. 
-### The main algorithm of Gibbs sampler is consist of following steps. 
+### The main algorithm of the Gibbs sampler is consists of the following steps. 
 #### 1. Initialization
 
 - The first is random initialization in which a random set of values is assigned and select motifs from these points. So our first set of **_N_** (total number of the input sequences) "motifs" is essentially a random set of sequences of length **_L_** and is not expected to have any pattern. 
