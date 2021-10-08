@@ -59,13 +59,13 @@ and where it is located in the sequence.
 #### 3. Convergence
 Convergence is typically declared when two local solutions are identical.
 #### 4. Output
-Once Gibbs sampler has been finished, the output will be presented in six parts, including the following:
+Once the Gibbs sampler has been finished, the output will be presented in six parts, including the following:
 
 - Start and end time of the task.
 - The final F value.
 - The number of iterations.
-- The motifs found where they start in the intron sequence.
-- The site-specific nucleotide frequencies for the motifs found.
+- The motifs are found where they start in the intron sequence.
+- The site-specific nucleotide frequencies for the motifs are found.
 - The position weight matrix (PWM). 
 ```shell
 Start: 2021-10-06 21:58
