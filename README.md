@@ -198,7 +198,7 @@ Final PWM:
 
 Finish: 2021-10-06 21:59
 ```
-It is possible that the input sequences may contain two or more different biologically significant motifs. This scripts will always end up with the strongest motif and miss all other motifs.
+It is possible that the input sequences may contain two or more different biologically significant motifs. This script will always end up with the strongest motif and miss all other motifs.
 ### Usage
 ```shell
 usage: python gibbs.py -i read.fasta -L (int) [-o output/]
